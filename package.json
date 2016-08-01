@@ -2,7 +2,6 @@
   "name": "rrw",
   "version": "0.0.1",
   "description": "React Redux Webpack",
-  "main": "index.js",
   "scripts": {
     "start": "NODE_ENV=development webpack-dev-server",
     "lint": "NODE_ENV=lint webpack-dev-server --config webpack.lint.config.js",
@@ -23,7 +22,8 @@
     "redux": "^3.5.2",
     "redux-logger": "^2.6.1",
     "redux-thunk": "^2.1.0",
-    "whatwg-fetch": "^1.0.0"
+    "whatwg-fetch": "^1.0.0",
+    "bluebird": "3.4.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
