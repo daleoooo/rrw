@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "React Redux Webpack",
   "scripts": {
-    "start": "NODE_ENV=development webpack-dev-server",
+    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --host 0.0.0.0 --port 8889 --devtool eval --progress --colors --watch --hot --content-base build",
     "lint": "NODE_ENV=lint webpack-dev-server --config webpack.lint.config.js",
     "build": "NODE_ENV=production webpack --config webpack.prod.config.js"
   },

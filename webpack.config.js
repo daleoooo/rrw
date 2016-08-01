@@ -14,17 +14,18 @@ const precss = require('precss');
 const autoprefixer = require('autoprefixer');
 
 // Constants
-const APP = path.join(__dirname, 'app/js/index.js');
+const APP = path.join(__dirname, 'app/js');
 const BUILD = path.join(__dirname, 'build');
 const STYLE = path.join(__dirname, 'app/styles/style.css');
 const PUBLIC = path.join(__dirname, 'app/public');
 const TEMPLATE = path.join(__dirname, 'app/templates/index_default.html');
-const HOST = process.env.HOST || '127.0.0.1';
+const HOST = process.env.HOST || '0.0.0.0';
 const PORT = process.env.PORT || 8080;
 
 module.exports = {
   // Paths and extensions
   entry: {
+    'whatwg-fetch': 'whatwg-fetch',
     app: APP,
     style: STYLE
   },
